@@ -1,0 +1,21 @@
+<svg width="47" height="313" viewBox="0 0 47 313" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="left-lamp">
+<g id="left-bulb">
+<g id="Ellipse 97" filter="url(#filter0_f_197_49)">
+<path d="M40 288C40 297.941 32.6127 306 23.5 306C14.3873 306 7 297.941 7 288C7 278.059 14.3873 270 23.5 270C32.6127 270 40 278.059 40 288Z" fill="#FFC100"/>
+</g>
+</g>
+<g id="left-cap">
+<path id="Vector" d="M28.91 244.503H19.52V255.008H28.91V244.503Z" fill="#240E0E"/>
+<path id="Vector_2" d="M42.42 288.551H4C4.77 273.434 11.74 249.259 23.21 249.259C34.68 249.259 41.66 273.434 42.42 288.551Z" fill="black"/>
+</g>
+<path id="left-wire" d="M23.73 -5H24.73V261H23.73V-5Z" fill="black"/>
+</g>
+<defs>
+<filter id="filter0_f_197_49" x="0" y="263" width="47" height="50" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="3.5" result="effect1_foregroundBlur_197_49"/>
+</filter>
+</defs>
+</svg>
