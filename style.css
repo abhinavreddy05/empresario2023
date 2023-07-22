@@ -1,5 +1,7 @@
 /*=============== GOOGLE FONTS ===============*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
+
 /*=============== VARIABLES CSS ===============*/
 :root {
   --header-height: 3.5rem;
@@ -337,163 +339,53 @@ nav ul li button:hover .arrow:before {
 }
 
 /*=============== HERO ===============*/
-.hero{
+body .hero{
   display: flex;
   flex-direction: row;
-  align-items: stretch;
-  flex-wrap: wrap;
-  height: 100svh;
+  height: 100vh;
+  align-items: center;
 }
 
-.hero .left, .hero .right{
+body .hero .left{
   display: flex;
   flex-direction: column;
-  justify-content: center ;
-  align-items: flex-start;
+  justify-content: center;
+  padding-left: 8vw;
+  height: 100%;
+  font-size: 1.5rem;
 }
 
-.hero .left{
-  gap: 1rem;
-  padding-left:4rem;
+body .hero .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
-
-.hero .left h1{
-  font-size:4rem;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 900;
-  -webkit-text-fill-color: transparent;
-  -webkit-text-stroke: 1.6px;
-  text-shadow: 3px 2px 4px 0px rgba(228, 0, 0, 0.25);
+body .hero .left h1{
+  font-size: 3.5rem;
+  text-transform:uppercase;
 }
 
-.hero .left h2{
-  left: 20%;
-}
-
-.hero .right #left-lamp-svg{
-  position: absolute;
-  top: -6.3rem;
-  left: 60%;
-  animation: lamp 2s linear infinite alternate;
-  transform-origin: top;
-}
-
-.hero .right #right-lamp-svg{
-  position: absolute;
-  top: -2rem;
-  left: 70%;
-  animation: lamp 1.6s linear 0.2s infinite alternate;
-  transform-origin: top;
-}
-
-@keyframes lamp {
-  0%{
-    transform: rotateZ(-2deg);
-  }
-  100%{
-    transform: rotateZ(2deg);
-  }
-}
-
-.hero .right #big-gear-svg{
-  position: absolute;
-  right: 5%;
-  top: 30%;
-  animation: gear 4s linear infinite;
-  transform-origin: center;
-}
-
-.hero .right #small-gear-svg{
-  position: absolute;
-  right: 2%;
-  top: 50%;
-  animation: gear 4.5s linear 0.3s infinite;
-  transform-origin: center
-}
-
-@keyframes gear {
-  0%{
-    transform: rotateZ(0deg);
-  }
-  100%{
-    transform: rotateZ(360deg);
-  }
-}
-
-.hero .right #main-svg{
-  position: absolute;
-  top: 10%;
-  animation: float 2s cubic-bezier(0.47, 0, 0.745, 1) infinite alternate;
-}
-
-@keyframes float {
-  from{
-    transform: translateY(-5px);
-  }
-  to{
-    transform: translateY(5px);
-  }
-}
-
-.hero .right #Brush{
-  animation: brush 2s ease infinite alternate;
-}
-
-.hero .right #right-arm{
-  animation: right-arm 1.2s ease infinite alternate;
-  transform-origin: left;
-}
-
-.hero .right #left-arm1, .hero .right #left-arm2{
-  animation: left-arm 1.1s linear infinite alternate;
-}
-
-@keyframes brush {
-  from{
-    transform: rotateZ(-1deg);
-  }
-  to{
-    transform: rotateZ(1deg);
-  }
-}
-
-@keyframes right-arm {
-  from{
-    transform: rotateZ(-0.8deg);
-  }
-  to{
-    transform: rotateZ(1deg);
-  }
-}
-
-@keyframes left-arm {
-  from{
-    transform: rotateZ(-0.5deg);
-  }
-  to{
-    transform: rotateZ(0.5deg);
-  }
-}
-
-.hero .left button {
+body .hero .left button {
   appearance: none;
-  background-color: #1A1A1A;
+  background-color: #000;
   border: 0.125em solid #1A1A1A;
-  border-radius: 0.8rem;
+  border-radius: 0.9375em;
   box-sizing: border-box;
   color: #fff;
   cursor: pointer;
   display: inline-block;
   font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: 1.2rem;
+  font-size: 16px;
   font-weight: 600;
   line-height: normal;
   margin: 0;
-  min-width: 0;
+  margin-top: 1rem;
+  width: fit-content;
   outline: none;
-  padding: 0.6rem 1.5rem;
+  padding: 1em 2.1em;
   text-align: center;
   text-decoration: none;
   transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
@@ -503,21 +395,135 @@ nav ul li button:hover .arrow:before {
   will-change: transform;
  }
  
- .hero .left button:disabled {
+body .hero .left button:disabled {
   pointer-events: none;
  }
  
- .hero .left button:hover {
+body .hero .left button:hover {
   color: #fff;
   background-color: #1A1A1A;
   box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
   transform: translateY(-2px);
  }
  
- .hero .left button:active {
+body .hero .left button:active {
   box-shadow: none;
   transform: translateY(0);
  }
+
+body .hero .right svg{
+  width: 96%;
+  animation: 2s ease-in-out infinite alternate float;
+}
+
+@keyframes float {
+  from{
+    transform: translateY(-0.6rem);
+  }
+  to{
+    transform: translateY(0.2rem);
+  }
+}
+
+/*=============== ABOUT ===============*/
+
+
+/*=============== INCENTIVES ===============*/
+body .incentives{
+  margin: 5rem 0;
+}
+
+body .incentives h1{
+  padding-left: 8vw;
+}
+body .incentives .cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1.5rem;
+  padding: 2rem 6rem;
+}
+body .incentives .container {
+  perspective: 1000px;
+  height: 32vh;
+  max-width: 100%;
+  width: 100%;
+  cursor: pointer;
+}
+body .incentives .card {
+  transform-style: preserve-3d;
+  height: 100%;
+  width: 100%;
+  transition: 0.5s ease;
+}
+body .incentives .front,
+body .incentives .back {
+  height: 100%;
+  width: 100%;
+  transform-style: preserve-3d;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 0.4em;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  backface-visibility: hidden;
+}
+body .incentives .front {
+  background: rgb(17,17,16);
+  background: linear-gradient(119deg, rgba(17,17,16,1) 0%, rgba(25,25,25,1) 100%);
+}
+body .incentives .front img {
+  width: 5em;
+}
+body .incentives .content {
+  transform: translateZ(60px);
+}
+body .incentives .content h3 {
+  font-size: 22px;
+  margin-top: 1em;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
+body .incentives .content p {
+  font-size: 14px;
+  line-height: 2em;
+  letter-spacing: 0.02em;
+  padding: 0 3em;
+}
+body .incentives .back {
+  background-color: #28253a;
+  transform: rotateX(180deg);
+}
+body .incentives .container:hover .card {
+  transform: rotateX(180deg);
+}
+@media (max-width: 1000px) {
+  body .incentives{
+    text-align: center;
+  }
+
+  body .incentives .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 1.5rem;
+    padding: 2rem 6rem;
+  }
+}
+
+@media (max-width: 800px){
+  body .incentives .cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 1.5rem;
+    padding: 2rem 6rem;
+  }
+}
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
@@ -606,6 +612,38 @@ nav ul li button:hover .arrow:before {
 @media screen and (min-width: 1152px) {
   .container {
     margin-inline: auto;
+  }
+}
+
+@media (max-width: 1100px) {
+  body .hero{
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 5vw;
+    align-items: center;
+    justify-content: center;
+  }
+
+  body .hero .left, body .hero .right{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    height: 40vh;
+  }
+
+  body .hero .left{
+    font-size: 1rem;
+  }
+
+  body .hero .left h1{
+    font-size: 2rem;
+  }
+
+  body .hero .right svg{
+    height: 100vh;
   }
 }
 
