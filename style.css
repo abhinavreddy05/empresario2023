@@ -513,6 +513,7 @@ body .about .section .left img {
   height: 100%;
   border-radius: 1rem;
   margin: 1.5rem 0;
+  filter: brightness(1.3);
 }
 body .about .section .left .fade {
   animation-name: fade;
@@ -620,8 +621,8 @@ body .incentives .front {
   background: rgb(17,17,16);
   background: linear-gradient(119deg, rgba(17,17,16,1) 0%, rgba(25,25,25,1) 100%);
 }
-body .incentives .front img {
-  width: 5em;
+body .incentives .front .content span {
+  font-size: 3rem;
 }
 body .incentives .content {
   transform: translateZ(60px);
@@ -676,6 +677,65 @@ body .incentives .container:hover .card {
     gap: 1.5rem;
     padding: 2rem 2rem;
   }
+}
+
+/*=============== TRACKS ===============*/
+body .tracks{
+  margin: 5rem 0;
+}
+
+body .tracks h1{
+  padding-left: 8vw;
+}
+body .tracks .cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1.5rem;
+  padding: 2rem 6rem;
+}
+
+body .tracks .card{
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  padding: 3rem 2rem;
+  border-radius: 0.4em;
+  background: rgb(17,17,16);
+  background: linear-gradient(119deg, rgba(17,17,16,1) 0%, rgba(25,25,25,1) 100%);
+  transform-style: preserve-3d;
+  transform: perspective(1000px);
+}
+
+body .tracks .card .top{
+  transform: translateZ(20px);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+body .tracks .card .top img, body .tracks .card .top span{
+  font-size: 2.6rem;
+  height: 2.6rem;
+  opacity: 0.9;
+}
+
+body .tracks .card .bottom{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+  transform: translateZ(20px);
+}
+
+body .tracks .card .bottom h3{
+  font-size: 1.6rem;
+}
+
+body .tracks .card .bottom p{
+  opacity: 0.8;
 }
 
 /*=============== BREAKPOINTS ===============*/
