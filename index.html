@@ -14,8 +14,12 @@
 
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 
+        <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
     </head>
     <body>
+        <div id="background" style="height: 100%; width: 100%; z-index: -100; position: fixed; filter: opacity(0.45);">
+        </div>
         <!--=============== HEADER ===============-->
         <header class="header">
             <nav class="nav container">
@@ -1240,17 +1244,16 @@
 
         <!--=============== SLIDER ===============-->
         <div class="slider">
-            <div class="slide-track">
-                <div class="slide"><img alt="" src="./slider/img1.png"></div>
-                <div class="slide"><img alt="" src="./slider/img2.png"></div>
-                <div class="slide"><img alt="" src="./slider/img3.png"></div>
-                <div class="slide"><img alt="" src="./slider/img4.png"></div>
-                <div class="slide"><img alt="" src="./slider/img5.png"></div>
-                <div class="slide"><img alt="" src="./slider/img6.png"></div>
-                <div class="slide"><img alt="" src="./slider/img7.png"></div>
+            <div class="carousel js-flickity" data-flickity-options='{ "draggable": false, "wrapAround": true, "autoPlay": 1500, "pageDots": false, "prevNextButtons": false, "pauseAutoPlayOnHover": false }'>
+                <div class="carousel-cell"><img alt="" src="./slider/img1.png"></div>
+                <div class="carousel-cell"><img alt="" src="./slider/img2.png"></div>
+                <div class="carousel-cell"><img alt="" src="./slider/img3.png"></div>
+                <div class="carousel-cell"><img alt="" src="./slider/img4.png"></div>
+                <div class="carousel-cell"><img alt="" src="./slider/img5.png"></div>
+                <div class="carousel-cell"><img alt="" src="./slider/img6.png"></div>
+                <div class="carousel-cell"><img alt="" src="./slider/img7.png"></div>
             </div>
         </div>
-
         <!--=============== ABOUT ===============-->
         <div class="about">
             <div class="section">
@@ -1329,6 +1332,21 @@
                     <div class="bottom">
                         <h3>IIT KGP Track</h3>
                         <p>Are you a student of IIT KGP? Got some high-potential ideas? This track is exclusively for innovative Business Models of IIT Kharagpur students. The majority of the team members ( 50% or more) should be from IIT Kharagpur.</p>
+                    </div>
+                </div>
+
+                <div class="odd">
+                    <div class="card" data-tilt data-tilt-reverse="true" data-tilt-glare data-tilt-max-glare="0.1">
+                        <div class="top">
+                            <span class="material-symbols-outlined">
+                                currency_bitcoin
+                                </span>
+                            <img src="./ecell_white.png" alt="">
+                        </div>
+                        <div class="bottom">
+                            <h3>Web 3.0</h3>
+                            <p>The global web 3.0 market is anticipated to grow at a formidable rate. The market growth can be attributed to the continuous evolution of technologies and shifts in data ownership. Empresario's new Web 3.0 track promotes these innovative and exciting business models.</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -1461,9 +1479,45 @@
             </div>
         </div>
 
+        <!--=============== TESTMONIALS ===============-->
+        <div class="testimonials">
+            <h1>Testimonials</h1>
+            <div id="box">
+                <div class="wrapper">
+                    <div class="testimonial-container" id="testimonial-container">
+                        <div id="testimonial1" class="active">
+                            <img src="" />
+                        </div>
+                    </div>
+                    <button id="prev" onclick="prev()">&lt;</button>
+                    <button id="next" onclick="next()">&gt;</button>
+                </div>
+            </div>
+        </div>
+
         <!--=============== JS ===============-->
         <script type="text/javascript" src="./vanilla-tilt.js"></script>
         <script src="./nav.js"></script>
         <script src="./slideshow.js"></script>
+        <script src="./testmonials.js"></script>
+        <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.waves.min.js"></script>
+
+        <script>
+            VANTA.WAVES({
+                el: "#background",
+                mouseControls: true,
+                touchControls: true,
+                gyroControls: false,
+                minHeight: 200.00,
+                minWidth: 200.00,
+                scale: 1.00,
+                scaleMobile: 1.00,
+                color: 0x9d9d9d,
+     
+            })
+        </script>
+
     </body>
 </html>
