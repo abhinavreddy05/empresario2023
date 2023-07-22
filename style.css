@@ -38,10 +38,25 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  scroll-behavior: smooth;
 }
 
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
   display: none;
+} */
+
+::-webkit-scrollbar-track{
+	
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar{
+	width: 8px;
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb{
+	background-color: #000000;
 }
 
 body {
@@ -342,8 +357,9 @@ nav ul li button:hover .arrow:before {
 body .hero{
   display: flex;
   flex-direction: row;
-  height: 100vh;
+  height: 95vh;
   align-items: center;
+  margin-bottom: -2.8rem;
 }
 
 body .hero .left{
@@ -425,8 +441,136 @@ body .hero .right svg{
   }
 }
 
+/*=============== SLIDER ===============*/
+.slider{
+  height: 4rem;
+  margin-bottom: 5rem;
+  overflow: hidden;
+  position: relative;
+  width: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.slider .slide-track{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 90vw;
+  overflow: hidden;
+  gap: 6rem;
+}
+
+.slider .slide-track .slide{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 250px;
+}
+
+.slider .slide img{
+  height: 4rem;
+}
+
+
 /*=============== ABOUT ===============*/
 
+body .about{
+  margin-bottom: 4rem;
+  overflow: hidden;
+}
+
+body .about h1{
+  padding-left: 8vw;
+}
+
+body .about .section{
+  display: flex;
+  flex-direction: row;
+  height: 70vh;
+  margin: 2rem 6rem;
+  border-radius: 1rem;
+  color: white;
+  background: rgb(17,17,16);
+  background: linear-gradient(119deg, rgba(17,17,16,1) 0%, rgba(25,25,25,1) 100%);
+}
+
+body .about .section .left{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0rem 2rem;
+}
+
+body .about .section .left .image-slideshow {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+body .about .section .left img {
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+  margin: 1.5rem 0;
+}
+body .about .section .left .fade {
+  animation-name: fade;
+  animation-duration: 2s;
+}
+@keyframes fade {
+  from {opacity: .5}
+  to {opacity: 1}
+}
+
+
+body .about .section .right{
+  padding: 1rem 2rem;
+}
+
+body .about .section .right h3{
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+
+body .about .section .right p{
+  opacity: 0.7;
+}
+
+
+@media (max-width: 1000px) {
+
+  body .about h1{
+    padding: 0;
+    text-align: center;
+  }
+
+  body .about .section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem 2rem;
+  }
+
+  body .about .section div{
+    width: 100%;
+    height: fit-content;
+  }
+
+  body .about .section .right{
+    padding-bottom: 2rem;
+    min-height: fit-content;
+    background: rgb(17,17,16);
+  background: linear-gradient(119deg, rgba(17,17,16,1) 0%, rgba(25,25,25,1) 100%);
+  border-radius: 1rem;
+  }
+}
+
+@media (max-width: 800px){
+  /* body .about{
+    height: 95vh;
+  } */
+}
 
 /*=============== INCENTIVES ===============*/
 body .incentives{
@@ -501,6 +645,7 @@ body .incentives .back {
 body .incentives .container:hover .card {
   transform: rotateX(180deg);
 }
+
 @media (max-width: 1000px) {
   body .incentives{
     text-align: center;
@@ -511,7 +656,15 @@ body .incentives .container:hover .card {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     gap: 1.5rem;
-    padding: 2rem 6rem;
+    padding: 2rem 4rem;
+  }
+
+  body .incentives .container{
+    width: auto;
+  }
+
+  body .incentives h1{
+    padding-left: 0;
   }
 }
 
@@ -521,7 +674,7 @@ body .incentives .container:hover .card {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
     gap: 1.5rem;
-    padding: 2rem 6rem;
+    padding: 2rem 2rem;
   }
 }
 
