@@ -709,7 +709,7 @@ body .tracks .card{
 }
 
 body .tracks .card .top{
-  transform: translateZ(20px);
+  transform: translateZ(30px);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -727,7 +727,7 @@ body .tracks .card .bottom{
   flex-direction: column;
   align-items: center;
   gap: 0.6rem;
-  transform: translateZ(20px);
+  transform: translateZ(50px);
 }
 
 body .tracks .card .bottom h3{
@@ -736,6 +736,34 @@ body .tracks .card .bottom h3{
 
 body .tracks .card .bottom p{
   opacity: 0.8;
+}
+
+@media (max-width: 1000px) {
+  body .tracks{
+    text-align: center;
+  }
+
+  body .tracks .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 1.5rem;
+    padding: 2rem 4rem;
+  }
+
+  body .tracks h1{
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 800px){
+  body .tracks .cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 1.5rem;
+    padding: 2rem 2rem;
+  }
 }
 
 /*=============== BREAKPOINTS ===============*/
