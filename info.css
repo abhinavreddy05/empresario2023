@@ -386,7 +386,7 @@ body .timeline {
     overflow: hidden;
     padding-block-start: 1.5rem;
     padding-block-end: 1rem;
-    font-weight: 500;
+    font-weight: 600;
   }
   body .timeline ul li .descr {
     padding-block-end: 1.5rem;
@@ -429,7 +429,7 @@ body .timeline {
 
   @media (max-width:800px) {
     body .timeline {
-        transform: scale(0.8) translateY(-12rem);
+        transform: scale(0.8) translateY(-24rem);
     }
   }
 

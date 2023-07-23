@@ -477,8 +477,7 @@ body .hero .right svg{
 /*=============== ABOUT ===============*/
 
 body .about{
-  margin-bottom: 4rem;
-  overflow: hidden;
+  
 }
 
 body .about .section{
@@ -542,6 +541,7 @@ body .about .section .right p{
   /* body .about{
     height: 95vh;
   } */
+
   body .about .section {
     display: flex;
     flex-direction: column;
