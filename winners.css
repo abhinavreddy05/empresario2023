@@ -151,7 +151,7 @@ body .winners .section .cards{
 body .winners .section .cards .card{
     max-width: 40%;
     background-color: black;
-    border-radius: 1.2rem;
+    border-radius: 0.4rem;
     padding: 2rem 2rem;
     color: white;
     display: flex;
@@ -193,3 +193,74 @@ body .winners .section .cards .card p{
         max-width: 85%;
     }
 }
+
+/*==============SLIDER=============*/
+body .slider{
+    margin-bottom: 4rem;
+    width: 80%;
+    margin: auto auto;
+    border-top: 2px solid black;
+    padding-top: 2.5rem;
+}
+
+body .slider h2{
+    font-size: 2rem;
+    text-align: center;
+}
+
+body .slider .carousel .carousel-cell::-webkit-scrollbar{
+    display: none;
+}
+
+
+body .slider .carousel .carousel-cell{
+    height: 70vh;
+    min-height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: black;
+    margin: 2rem;
+    border-radius: 0.6rem;
+    color: white;
+    padding: 2rem 2rem;
+    overflow: scroll;
+}
+
+body .slider .carousel .carousel-cell img{
+    margin: 2rem auto;
+    height: 4rem;
+}
+
+body .slider .carousel .carousel-cell p{
+    padding: 0.4rem 2rem;
+}
+
+@media (max-width:800px) {
+    body .slider{
+        width: 90%;
+    }
+
+    body .slider .carousel .carousel-cell{
+        height: 90vh;
+        padding: 1rem 0.6rem;
+    }
+
+    body .slider .carousel .carousel-cell img{
+        margin: 1rem auto;
+    }
+}
+
+
+.ele{
+    animation: movein 0.1s linear;
+  }
+
+  @keyframes movein {
+    from{
+        transform: translateY(20rem);
+    }
+    to{
+        transform: translateY(0);
+    }
+  }
