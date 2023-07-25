@@ -7,15 +7,11 @@ body .hero {
     justify-content: center;
     --primary-color: #185ee0;
     --secondary-color: #e6eef9;
-    text-align: center;
   }
   
-  body .hero p{
-    margin: 1rem auto;
-  }
-
   body .hero .middle{
-      text-align: center;
+    text-align: center;
+    margin: 1.2rem 0;
   }
   
   body .hero .container {
@@ -48,9 +44,10 @@ body .hero {
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
     height: 44px;
     width: 170px;
-    font-size: 1rem;
+    font-size: 0.8rem;
     font-weight: 500;
     border-radius: 99px;
     cursor: pointer;
@@ -96,21 +93,25 @@ body .hero {
   body .hero input[id="radio-5"]:checked ~ .glider {
     transform: translateX(400%);
   }
+
+  body .hero input[id="radio-6"]:checked ~ .glider {
+    transform: translateX(500%);
+  }
   
 
-  @media (max-width:800px) {
+  @media (max-width:1000px) {
     body .hero{
         padding-top: 5rem;
     }
 
     body .hero .tabs{
-        transform: scale(0.65);
+        transform: scale(0.85);
     }
   }
 
-  @media (max-width: 600px){
+  @media (max-width: 900px){
     body .hero .tabs{
-        transform: scale(0.58);
+        transform: scale(0.8);
     }
   }
 
@@ -126,52 +127,94 @@ body .hero {
     }
   }
 
-  /***********MEDIA****************/
-
-  body .media{
-    margin: 2rem 0;
-    margin-bottom: 4rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  body .mobilehero {
+    padding-top: 5rem;
+    flex-direction:column;
+    height: 40vh;
+    align-items:center;
+    justify-content: center;
+    --primary-color: #185ee0;
+    --secondary-color: #e6eef9;
+    display: none;
   }
-
-  body .media .section{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  
+  body .mobilehero .middle{
     text-align: center;
+    margin: 1.2rem 0;
+  }
+
+  body .faq{
+    margin-bottom: 8rem;
+    padding-top: 8vh;
+  }
+
+  body .faq .faq-container {
+    display: grid;
+    gap: 1em;
     width: 90%;
-    margin: 0.6rem 0;
+    margin: auto auto;
+  }
+  
+  body .faq .faq-header {
+    padding: 1.2em 1em;
+    
+    font-weight: 600;
+    
+    background-color: whitesmoke;
+
+    user-select: none;
+    cursor: pointer;
+  }
+  
+  body .faq .faq-content {
+    background-color: white;
+    border-radius: 0 0rem 1rem 1rem;
+    padding: 1em;
+    font-weight: 500;
   }
 
-  body .media .section h2{
-    font-size: 1.8rem;
+  body .faq .faq-content h2{
+    margin: 1rem 0;
   }
 
-  body .media .section .cards{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
+  /************Structure**********/
+.struct{
+    flex-direction:column;
+    padding: 0.5rem 9rem;
+    font-weight: 400;
+    font-size: 1.075rem;
+    }
+
+.struct h1{
+    display:flex;
     align-items: center;
-    justify-content: space-evenly;
-    gap: 2rem;
-    margin: 2rem 0;
-    flex-wrap: wrap;
-  }
+    justify-content: center;
+    margin:4rem;
+    text-align: center;
+}
 
-  body .media .section .cards .card{
-    background: #fff;
-    box-shadow: 0px 0px 20px rgb(0 0 0 / 10%);
-    border-bottom: 3px solid #066b23;
-    border-radius: 8px;
-    transition: 0.3s ease;
-    padding: 1rem;
-    width: 300px;
-    height: 240px;
-  }
+@media (max-width:960px) {
+    .struct{
+        padding: 0.5rem 4rem;
+    }
+}
 
-  body .media .section .cards .card img{
-    height: 100%;
-    max-width: 90%;
-  }
+@media (max-width:800px) {
+    .struct{
+        display: none;
+        padding: 0.5rem 4rem;
+    }
+}
+
+.ele{
+    margin-bottom: 5rem;
+}
+
+@media (max-width:850px) {
+    body .hero{
+        display: none;
+    }
+    body .mobilehero{
+        display: block;
+    }
+}
