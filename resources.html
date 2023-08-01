@@ -1,507 +1,774 @@
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
 
-        <!--=============== REMIXICONS ===============-->
-        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!--=============== CSS ===============-->
-        <link rel="stylesheet" href="./nav.css">
-        <link rel="stylesheet" href="./resources.css">
+    <!--=============== REMIXICONS ===============-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 
-        <title>Empresario</title>
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="./nav.css">
+    <link rel="stylesheet" href="./resources.css">
 
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <title>Empresario</title>
 
-        <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 
-        <link rel="stylesheet" href="./footer.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./footer.css">
 
-        <link rel='stylesheet' id='font-materials-items-css' href='https://fonts.googleapis.com/icon?family=Material+Icons&amp;ver=5.7.2' type='text/css' media='all' />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    </head>
-    <body>
-        <!-- <div id="background" style="height: 100%; width: 100%; z-index: -100; position: fixed; filter: opacity(0.45);">
+    <link rel='stylesheet' id='font-materials-items-css'
+        href='https://fonts.googleapis.com/icon?family=Material+Icons&amp;ver=5.7.2' type='text/css' media='all' />
+
+</head>
+
+<body>
+    <!-- <div id="background" style="height: 100%; width: 100%; z-index: -100; position: fixed; filter: opacity(0.45);">
         </div> -->
-        <!--=============== HEADER ===============-->
-        <header class="header">
-            <nav class="nav container">
-                <div class="nav__data">
-                    <!-- <a href="#" class="nav__logo">
+    <!--=============== HEADER ===============-->
+    <header class="header">
+        <nav class="nav container">
+            <div class="nav__data">
+                <!-- <a href="#" class="nav__logo">
                         <i class="ri-code-s-slash-line"></i> CodeBox
                     </a> -->
-    
-                    <div class="nav__toggle" id="nav-toggle">
-                        <i class="ri-menu-line nav__toggle-menu"></i>
-                        <i class="ri-close-line nav__toggle-close"></i>
-                    </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-line nav__toggle-menu"></i>
+                    <i class="ri-close-line nav__toggle-close"></i>
                 </div>
+            </div>
 
-                <!--=============== NAV MENU ===============-->
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <li>
-                            <a href="./index.html" class="nav__link">Home</a>
-                        </li>
+            <!--=============== NAV MENU ===============-->
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li>
+                        <a href="./index.html" class="nav__link">Home</a>
+                    </li>
 
-                        <li>
-                            <a href="./info.html" class="nav__link">Info</a>
-                        </li>
+                    <li>
+                        <a href="./info.html" class="nav__link">Info</a>
+                    </li>
 
-                        <li>
-                            <a href="./index.html#tracks" class="nav__link">Tracks</a>
-                        </li>
+                    <li>
+                        <a href="./index.html#tracks" class="nav__link">Tracks</a>
+                    </li>
 
-                        <li>
-                            <a href="./index.html#incentives" class="nav__link">Incentives</a>
-                        </li>
+                    <li>
+                        <a href="./index.html#incentives" class="nav__link">Incentives</a>
+                    </li>
 
-                        <li>
-                            <a href="./winners.html" class="nav__link">Winners</a>
-                        </li>
+                    <li>
+                        <a href="./winners.html" class="nav__link">Winners</a>
+                    </li>
 
-                        <li>
-                            <a href="./resources.html" class="nav__link">Resources</a>
-                        </li>
+                    <li>
+                        <a href="./resources.html" class="nav__link">Resources</a>
+                    </li>
 
-                        <li>
-                            <a href="./association.html" class="nav__link">Associations</a>
-                        </li>
+                    <li>
+                        <a href="./association.html" class="nav__link">Associations</a>
+                    </li>
 
-                        <li>
-                            <a href="./media.html" class="nav__link">Media</a>
-                        </li>
-                        <li>
-                            <button>
-                                    Login
-                                <div class="arrow-wrapper">
-                                    <div class="arrow"></div>
-                            
-                                </div>
-                            </button>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </header>
+                    <li>
+                        <a href="./media.html" class="nav__link">Media</a>
+                    </li>
+                    <li>
+                        <button>
+                            Login
+                            <div class="arrow-wrapper">
+                                <div class="arrow"></div>
 
-        <!--=============== HERO ===============-->
-        <div class="hero">
-            <div class="middle"><h1>RESOURCES</h1></div>
-            <p class="middle">All useful information on integration and for working with</p>
+                            </div>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
 
-            <div class="container">
-              <div class="tabs">
+    <!--=============== HERO ===============-->
+    <div class="hero">
+        <div class="middle">
+            <h1>RESOURCES</h1>
+        </div>
+        <p class="middle">All useful information on integration and for working with</p>
+
+        <div class="container">
+            <div class="tabs">
                 <input type="radio" id="radio-1" name="tabs" onclick="ele(0)" checked />
                 <label class="tab" for="radio-1">Business Model Competition</label>
-                <input type="radio" id="radio-2" name="tabs" onclick="ele(1)"/>
+                <input type="radio" id="radio-2" name="tabs" onclick="ele(1)" />
                 <label class="tab" for="radio-2">B Model v/s B Plan</label>
-                <input type="radio" id="radio-3" name="tabs" onclick="ele(2)"/>
+                <input type="radio" id="radio-3" name="tabs" onclick="ele(2)" />
                 <label class="tab" for="radio-3">Development</label>
-                <input type="radio" id="radio-4" name="tabs" onclick="ele(3)"/>
+                <input type="radio" id="radio-4" name="tabs" onclick="ele(3)" />
                 <label class="tab" for="radio-4">Business Model Canvas</label>
-                <input type="radio" id="radio-5" name="tabs" onclick="ele(4)"/>
+                <input type="radio" id="radio-5" name="tabs" onclick="ele(4)" />
                 <label class="tab" for="radio-5">About Patents</label>
-                <input type="radio" id="radio-6" name="tabs" onclick="ele(5)"/>
+                <input type="radio" id="radio-6" name="tabs" onclick="ele(5)" />
                 <label class="tab" for="radio-6">Submission</label>
                 <span class="glider"></span>
-              </div>
-            </div>
-            
-
-      <!--=============== STRUCTURE ===============-->
-      <div class="struct ele">
-        <h1>What is Business Model Competition?</h1>
-        <p>
-            Empresario represents a radical departure from the past and the crest of a new paradigm in entrepreneurship. Empresario is not a business plan competition. Rather than focusing on developing a robust business plan, complete with financials and slick presentations, business model competition focuses on identifying and precisely defining the assumptions of the new venture, testing those assumptions in the field, and then pivoting (changing) based on the lessons learned. It rewards entrepreneurs fo
-        </p>
-        <br />
-        <p>Breaking down ideas into key business model assumptions.
-            Getting outside the building and testing their assumptions with customers.
-            Applying customer development and lean startup principles to nail the solution.
-            Learning to pivot (change) until arrival at a customer-validated business model.</p>
-      </div>
-
-      <div class="struct ele">
-        <h1>How does a Business Model differ from a traditional Business Plan?</h1>
-        <p>
-            The International Business Model Competition is about recognizing that any new venture is just a guess at a problem / solution and the only valid way to test whether those guesses are right is to “get outside the building” and start working with customers. So what exactly is the difference between a business model and a business plan?
-        </p>
-        <br />
-        <p><strong>Outside versus Inside the Building:</strong> Most business plans are written using library research. Successful business models are achieved through talking to customers and making changes based on feedback from those conversations.</p>
-        <br />
-        <p><strong>Input versus Output Focus:</strong> The goal is to identify your assumptions and turn them into facts by getting outside the building. And when a startup has done this, the story is compelling and it is an awesome one to tell because it is based on facts. Validated learning about what customers reallywant is the stuff a business model is made of and music to the ears of potential investors.</p>
-        <br />
-        <p><strong>Change versus Fortify:</strong>Most business plans attempt to fortify/prove the core idea with evidence. Judges of the Empresario will be looking for instances where teams learned they were wrong and made a pivot in a new and right direction. Your application should focus on the lessons learned and “pivots” made—the more the better.</p>
-        <br />
-        <p><strong>Chasing Customers versus Chasing Funding:</strong> Let’s face it, many business plans are written to raise money. Unfortunately the business plan formula doesn’t capture the answers VCs most want to see: real validation you can make a product customers want. Instead of chasing the money, chase customers. Getting into the field you will validate the model and raising money will be relatively easy.</p>
-        <br />
-        <p><strong>Launching versus Talking:</strong> Business plans often talk about what will happen in the future. Empresario is about what you learned by applying a Customer Development / Lean Startup / Nail It then Scale It process.</p>
-      </div>
-
-      <div class="struct ele">
-        <h1>TAB 3</h1>
-        <p>
-            The International Business Model Competition is about recognizing that any new venture is just a guess at a problem / solution and the only valid way to test whether those guesses are right is to “get outside the building” and start working with customers. So what exactly is the difference between a business model and a business plan?
-        </p>
-        <br />
-        <p><strong>Outside versus Inside the Building:</strong> Most business plans are written using library research. Successful business models are achieved through talking to customers and making changes based on feedback from those conversations.</p>
-        <br />
-        <p><strong>Input versus Output Focus:</strong> The goal is to identify your assumptions and turn them into facts by getting outside the building. And when a startup has done this, the story is compelling and it is an awesome one to tell because it is based on facts. Validated learning about what customers reallywant is the stuff a business model is made of and music to the ears of potential investors.</p>
-        <br />
-        <p><strong>Change versus Fortify:</strong>Most business plans attempt to fortify/prove the core idea with evidence. Judges of the Empresario will be looking for instances where teams learned they were wrong and made a pivot in a new and right direction. Your application should focus on the lessons learned and “pivots” made—the more the better.</p>
-        <br />
-        <p><strong>Chasing Customers versus Chasing Funding:</strong> Let’s face it, many business plans are written to raise money. Unfortunately the business plan formula doesn’t capture the answers VCs most want to see: real validation you can make a product customers want. Instead of chasing the money, chase customers. Getting into the field you will validate the model and raising money will be relatively easy.</p>
-        <br />
-        <p><strong>Launching versus Talking:</strong> Business plans often talk about what will happen in the future. Empresario is about what you learned by applying a Customer Development / Lean Startup / Nail It then Scale It process.</p>
-      </div>
-
-      <div class="struct ele">
-        <h1>TAB 4</h1>
-        <p>
-            The International Business Model Competition is about recognizing that any new venture is just a guess at a problem / solution and the only valid way to test whether those guesses are right is to “get outside the building” and start working with customers. So what exactly is the difference between a business model and a business plan?
-        </p>
-        <br />
-        <p><strong>Outside versus Inside the Building:</strong> Most business plans are written using library research. Successful business models are achieved through talking to customers and making changes based on feedback from those conversations.</p>
-        <br />
-        <p><strong>Input versus Output Focus:</strong> The goal is to identify your assumptions and turn them into facts by getting outside the building. And when a startup has done this, the story is compelling and it is an awesome one to tell because it is based on facts. Validated learning about what customers reallywant is the stuff a business model is made of and music to the ears of potential investors.</p>
-        <br />
-        <p><strong>Change versus Fortify:</strong>Most business plans attempt to fortify/prove the core idea with evidence. Judges of the Empresario will be looking for instances where teams learned they were wrong and made a pivot in a new and right direction. Your application should focus on the lessons learned and “pivots” made—the more the better.</p>
-        <br />
-        <p><strong>Chasing Customers versus Chasing Funding:</strong> Let’s face it, many business plans are written to raise money. Unfortunately the business plan formula doesn’t capture the answers VCs most want to see: real validation you can make a product customers want. Instead of chasing the money, chase customers. Getting into the field you will validate the model and raising money will be relatively easy.</p>
-        <br />
-        <p><strong>Launching versus Talking:</strong> Business plans often talk about what will happen in the future. Empresario is about what you learned by applying a Customer Development / Lean Startup / Nail It then Scale It process.</p>
-      </div>
-
-      <div class="struct ele">
-        <h1>TAB 5</h1>
-        <p>
-            The International Business Model Competition is about recognizing that any new venture is just a guess at a problem / solution and the only valid way to test whether those guesses are right is to “get outside the building” and start working with customers. So what exactly is the difference between a business model and a business plan?
-        </p>
-        <br />
-        <p><strong>Outside versus Inside the Building:</strong> Most business plans are written using library research. Successful business models are achieved through talking to customers and making changes based on feedback from those conversations.</p>
-        <br />
-        <p><strong>Input versus Output Focus:</strong> The goal is to identify your assumptions and turn them into facts by getting outside the building. And when a startup has done this, the story is compelling and it is an awesome one to tell because it is based on facts. Validated learning about what customers reallywant is the stuff a business model is made of and music to the ears of potential investors.</p>
-        <br />
-        <p><strong>Change versus Fortify:</strong>Most business plans attempt to fortify/prove the core idea with evidence. Judges of the Empresario will be looking for instances where teams learned they were wrong and made a pivot in a new and right direction. Your application should focus on the lessons learned and “pivots” made—the more the better.</p>
-        <br />
-        <p><strong>Chasing Customers versus Chasing Funding:</strong> Let’s face it, many business plans are written to raise money. Unfortunately the business plan formula doesn’t capture the answers VCs most want to see: real validation you can make a product customers want. Instead of chasing the money, chase customers. Getting into the field you will validate the model and raising money will be relatively easy.</p>
-        <br />
-        <p><strong>Launching versus Talking:</strong> Business plans often talk about what will happen in the future. Empresario is about what you learned by applying a Customer Development / Lean Startup / Nail It then Scale It process.</p>
-      </div>
-
-      <div class="struct ele">
-        <h1>TAB 6</h1>
-        <p>
-            The International Business Model Competition is about recognizing that any new venture is just a guess at a problem / solution and the only valid way to test whether those guesses are right is to “get outside the building” and start working with customers. So what exactly is the difference between a business model and a business plan?
-        </p>
-        <br />
-        <p><strong>Outside versus Inside the Building:</strong> Most business plans are written using library research. Successful business models are achieved through talking to customers and making changes based on feedback from those conversations.</p>
-        <br />
-        <p><strong>Input versus Output Focus:</strong> The goal is to identify your assumptions and turn them into facts by getting outside the building. And when a startup has done this, the story is compelling and it is an awesome one to tell because it is based on facts. Validated learning about what customers reallywant is the stuff a business model is made of and music to the ears of potential investors.</p>
-        <br />
-        <p><strong>Change versus Fortify:</strong>Most business plans attempt to fortify/prove the core idea with evidence. Judges of the Empresario will be looking for instances where teams learned they were wrong and made a pivot in a new and right direction. Your application should focus on the lessons learned and “pivots” made—the more the better.</p>
-        <br />
-        <p><strong>Chasing Customers versus Chasing Funding:</strong> Let’s face it, many business plans are written to raise money. Unfortunately the business plan formula doesn’t capture the answers VCs most want to see: real validation you can make a product customers want. Instead of chasing the money, chase customers. Getting into the field you will validate the model and raising money will be relatively easy.</p>
-        <br />
-        <p><strong>Launching versus Talking:</strong> Business plans often talk about what will happen in the future. Empresario is about what you learned by applying a Customer Development / Lean Startup / Nail It then Scale It process.</p>
-      </div>
-      <!-- FOOTER -->
-    <section class="footer">
-        <img class="logo" src="./ecell_logo_white.png" alt="Entrepreneurship Cell" width="35%">
-        
-        <h3> CONTACT </h3>
-        <br>
-        <div class="contact">
-            <div class="child">
-                <div>
-                    <h3>Devansh Jain</h3>
-                    <p>Senior Manager<br />
-                        <br> Competitions and Associations
-                    </p>
-                </div>
-                    <br>
-                    <p ><a href="mailto:devansh.jain@ecell-iitkgp.org">devansh.jain@ecell-iitkgp.org</a></p>
-                    <p> <a  href="tel:+91 9571375240" >+91 9571375240</a></p>
-            </div>
-            
-            <div class="child">
-                <div>
-                    <h3>Siddhant Vardhan Mehta</h3>
-                    <p> Senior Manager <br />
-                        <br> Competitions and Associations                                  
-                    </p>
-                </div>
-                    <br>
-                    <p ><a href="mailto:siddhant.vardhan@ecell-iitkgp.org">siddhant.vardhan@ecell-iitkgp.org</a></p>
-                    <p > <a href="tel:+91 8824004041">+91 8824004041</a></p>
             </div>
         </div>
-      
-        <div><span><br><br>&copy;2021 Entrepreneurship Cell , IIT Kharagpur </span></div>
 
-        <div class="social">
-            <ul >
-                <a href="https://www.facebook.com/ecell.iitkgp/" style=" background-color:#39539d;" class="fa fa-facebook "></a>
-                <a href="https://www.instagram.com/ecellkgp/?hl=en" style=" background-color:#3da9f5;"class="fa fa-instagram "></a>
-                <a href="https://twitter.com/ecelliitkgp?lang=en" style=" background-color:#00538c;"class="fa fa-twitter "></a>
-                <a href="https://www.linkedin.com/company/entrepreneurship-cell-iit-kharagpur/" style="background-color:#2778bb;" class="fa fa-linkedin "></a>
-            </ul>
-        </div>
-
-    <footer>
-        <a href="#top" title="Go to top of page">
-            <svg width="16" height="12" xmlns="https://www.w3.org/2000/svg">
-                <path stroke="#fff" stroke-width="2" d="M1 7l5.143-5L11 7" fill="none" fill-rule="evenodd" />
-            </svg>
-            <span>Back to top</span>
-        </a>
-    </footer>
-</section>
-      </div>
-      
-      <!--=================FAQ's===================-->
-      <div class="mobilehero">
-        <div class="middle"><h1>RESOURCES</h1></div>
-        <p class="middle">All useful information on integration and for working with</p>
-        
 
         <!--=============== STRUCTURE ===============-->
         <div class="struct ele">
-            
+            <h1>What is Business Model Competition?</h1>
+            <p>
+                Empresario represents a radical departure from the past and the crest of a new paradigm in
+                entrepreneurship. Empresario is not a business plan competition. Rather than focusing on developing a
+                robust business plan, complete with financials and slick presentations, business model competition
+                focuses on identifying and precisely defining the assumptions of the new venture, testing those
+                assumptions in the field, and then pivoting (changing) based on the lessons learned. It rewards
+                entrepreneurs fo
+            </p>
+            <br />
+            <p>Breaking down ideas into key business model assumptions.
+                Getting outside the building and testing their assumptions with customers.
+                Applying customer development and lean startup principles to nail the solution.
+                Learning to pivot (change) until arrival at a customer-validated business model.</p>
         </div>
 
         <div class="struct ele">
-            
+            <h1>How does a Business Model differ from a traditional Business Plan?</h1>
+            <p>
+                The International Business Model Competition is about recognizing that any new venture is just a guess
+                at a problem / solution and the only valid way to test whether those guesses are right is to “get
+                outside the building” and start working with customers. So what exactly is the difference between a
+                business model and a business plan?
+            </p>
+            <br />
+            <p><strong>Outside versus Inside the Building:</strong> Traditional business plans often rely on secondary
+                research, market reports, and internal analysis to gather information about the market and potential
+                customers. However, this approach can lead to assumptions based on incomplete or outdated data. The lean
+                startup methodology, however, encourages entrepreneurs to actively engage with customers early on. By
+                having direct conversations, conducting interviews, and observing customer behavior, startups can gain
+                valuable insights and feedback that inform the development of their business model.</p>
+            <br />
+            <p><strong>Input versus Output Focus:</strong> Traditional business plans tend to focus on input-based
+                assumptions, where entrepreneurs make educated guesses about customers' preferences, market demand, and
+                strategies. These assumptions are often treated as facts without being tested. The lean startup approach
+                emphasizes an output-focused mindset. It aims to transform assumptions into facts by actively seeking
+                customer feedback and validating hypotheses through experiments and real-world data. This iterative
+                feedback loop allows startups to continuously refine their business model based on actual customer
+                responses and behavior, increasing the chances of creating a product or service that customers truly
+                want.</p>
+            <br />
+            <p><strong>Change versus Fortify:</strong>Traditional business plans often seek to fortify the core idea or
+                concept by gathering evidence, conducting market research, and providing extensive justifications. These
+                plans are often presented as a static document that attempts to convince the idea's viability. In
+                contrast, the lean startup approach embraces a mindset of continuous learning and adaptation. It
+                recognizes that initial assumptions may be flawed or incomplete and encourages startups to be open to
+                change. Rather than seeing a pivot or change in direction as a failure, it is viewed as a natural part
+                of the learning process.</p>
+            <br />
+            <p><strong>Chasing Customers versus Chasing Funding:</strong>Traditional business plans often focus on
+                attracting funding as a primary goal. Entrepreneurs may spend a significant amount of time crafting
+                their plans to impress potential investors and secure financing. In contrast, the lean startup approach
+                encourages startups to prioritize customer acquisition and validation over fundraising. By focusing on
+                getting into the field, engaging with customers, and delivering a product or service that meets their
+                needs, you can demonstrate real-world validation and traction.</p>
+            <br />
+            <p><strong>Launching versus Talking:</strong> Traditional business plans are often centered around future
+                projections, forecasts, and plans. They lay out a roadmap for what the business intends to do without
+                necessarily validating those assumptions through real-world feedback. In contrast, the lean startup
+                methodology emphasizes the importance of taking action and launching early. Startups actively engage in
+                customer development, gathering insights, and iterating their products or services based on validated
+                learning. This emphasis on tangible actions and outcomes positions the startup to learn and adapt
+                quickly, ultimately increasing your chances of success.</p>
+        </div>
+
+        <div class="struct ele">
+            <h1>Business Model Development</h1>
+            <p>
+                Based on, Steve Blank’s Customer Development process, Alexander Osterwalder’s Business Model Generation
+                book, and Nathan Furr’s Nail It then Scale It process.
+            </p>
+            <br />
+            <p><strong>Find a Problem:</strong> Find a big customer problem worth solving and write down all your key
+                hypotheses about the business model to solve this problem. We recommend that you use Alex Osterwalder’s
+                Business Model Canvas as a scorecard to track your assumptions and the changes that you make.</p>
+            <br />
+            <p><strong>Nail the Pain:</strong> Get outside the building and inter-view customers face-to-face to
+                understand the “job” customers are trying to do, their current pain, and how they solve that pain. Pivot
+                when you discover you are wrong</p>
+            <br />
+            <p><strong>Nail the Solution:</strong> Develop a minimum viable product prototype and get outside the
+                building face-to-face with customers to test your vision of the solution. Pivot when you discover you
+                are wrong. Re-peat these tests until you nail the solution.</p>
+            <br />
+            <p><strong>Nail the Go-to-Market Strategy:</strong> Get outside the building to understand the end-to-end
+                customer buying process, the market communication infrastructure, the distribution infrastructure.
+                Identify the leverage points.</p>
+            <br />
+            <p><strong>Nail the Business Model:</strong> Use the facts discovered to validate the revenue model for the
+                business.</p>
+            <br />
+            <p><strong>Pivot:</strong> Throughout the process learn to change course whenever you discover you are
+                wrong.</p>
+        </div>
+
+        <div class="struct ele">
+            <h1>Business Model Canvas</h1>
+            <p>
+                The Business Model Canvas (BMC) is a strategic management tool to quickly and easily define and
+                communicate a business idea or concept. It is a one page document which works through the fundamental
+                elements of a business or product, structuring an idea in a coherent way.
+            </p>
+            <br />
+            <p><strong>Value Proposition:</strong> What’s compelling about the proposition? Why do customers buy, use?
+                It is the fundamental concept of the exchange of value between your business and your customer/clients.
+                Generally, value is exchanged from a customer for money when a problem is solved or a pain is relieved
+                for them by your business.</p>
+            <br />
+            <p><strong>Customer Segments:</strong> Who are the customers? What do they think? See? Feel? Do? Customer
+                Segmenting is the practice of dividing a customer base into groups of individuals that are similar in
+                specific ways, such as age, gender, interests and spending habits.</p>
+            <br />
+            <p><strong>Channels:</strong>How are these propositions promoted, sold and delivered? Why? Is it working?
+                Channels are defined as the avenues through which your customer comes into contact with your business
+                and becomes part of your sales cycle. This is generally covered under the marketing plan for your
+                business.</p>
+            <br />
+            <p><strong>Customer Relationships:</strong> How do you interact with the customer through their ‘journey’?
+                Customer Relationships is defined as how a business interacts with its customers. So, do you meet with
+                them in person? Or over the phone? Or is your business predominantly run online so the relationship will
+                be online too?
+            </p>
+            <br />
+            <p><strong>Revenue Streams:</strong> How does the business earn revenue from the value propositions? Revenue
+                Streams are defined as the way by which your business converts your Value Proposition or solution to the
+                customer’s problem into financial gain.</p>
+            <br />
+            <p><strong>Key Activities:</strong>What uniquely strategic things does the business do to deliver its
+                proposition?
+                The Key Activities of your business/product are the actions that your business undertakes to achieve the
+                value proposition for your customers.</p>
+            <br />
+            <p><strong>Key Resources:</strong>What unique strategic assets must the business have to compete?
+                Key means the resources your business requires to do business. These resources are what is needed
+                practically to undertake the action/activities of your business:</p>
+            <br />
+            <p><strong>Key Partnerships:</strong>What can the company not do so it can focus on its Key Activities? If
+                my business cannot achieve the value proposition alone, who else do I need to rely on to do it
+                Key Partners are a list of other external companies/suppliers/parties you may need to achieve your key
+                activities and deliver value to the customer.</p>
+            <br />
+            <p><strong>Cost Structure:</strong>What are the business’ major cost drivers? How are they linked to
+                revenue?
+                Your business cost structure is defined as the monetary cost of operating as a business.</p>
+        </div>
+
+        <div class="struct ele">
+            <h1>Patents</h1>
+            <p>
+                When inventors come up with a new device, the first thing they want to do is patent it. Patents are
+                enforceable rights in a particular jurisdiction given to an inventor to exclude others from using,
+                making or selling their invention. For a certain period of time, patent-holders are allowed to control
+                how their inventions are used, allowing them to reap the financial rewards of their work. Patents are a
+                palpable, legally-binding manifestation of a person's genius and innovation; they allow a person to
+                actually own an INVENTION.
+                One can obtain a patent by filing a patent application in a prescribed format in any one of the four
+                patent offices in India. Patent application will result in defining your rights over the invention and
+                how broadly you have protected your invention. Even simple words in patent application can change your
+                right over the scope of invention drastically. Patent attorneys or patent agents are the best people to
+                write and draft your application. Filing an invention in India will give you a right only in India as
+                patent right is jurisdictional in nature. One has to file patent applications in other countries
+                wherever he/she feels the invention needs to be protected.
+
+            </p>
+            <br />
+            <!-- <p><strong>Outside versus Inside the Building:</strong> Most business plans are written using library research. Successful business models are achieved through talking to customers and making changes based on feedback from those conversations.</p>
+        <br />
+        <p><strong>Input versus Output Focus:</strong> The goal is to identify your assumptions and turn them into facts by getting outside the building. And when a startup has done this, the story is compelling and it is an awesome one to tell because it is based on facts. Validated learning about what customers reallywant is the stuff a business model is made of and music to the ears of potential investors.</p>
+        <br />
+        <p><strong>Change versus Fortify:</strong>Most business plans attempt to fortify/prove the core idea with evidence. Judges of the Empresario will be looking for instances where teams learned they were wrong and made a pivot in a new and right direction. Your application should focus on the lessons learned and “pivots” made—the more the better.</p>
+        <br />
+        <p><strong>Chasing Customers versus Chasing Funding:</strong> Let’s face it, many business plans are written to raise money. Unfortunately the business plan formula doesn’t capture the answers VCs most want to see: real validation you can make a product customers want. Instead of chasing the money, chase customers. Getting into the field you will validate the model and raising money will be relatively easy.</p>
+        <br />
+        <p><strong>Launching versus Talking:</strong> Business plans often talk about what will happen in the future. Empresario is about what you learned by applying a Customer Development / Lean Startup / Nail It then Scale It process.</p> -->
+        </div>
+
+        <div class="struct ele">
+            <h1>Submission</h1>
+            <p>
+                All the teams who qualifies the first round, need to submit a documentation which must adhere to the
+                following submission requirements: Although there is not one format for successful submissions, we
+                suggest that it should contain the following components:
+
+            </p>
+            <br />
+            <p><strong>Title Slide:</strong> Briefly introduce your team and provide an overview of your business,
+                highlighting the pain point it addresses and the proposed solution.
+            </p>
+            <br />
+            <p><strong>Assumption Slides:</strong> State your initial hypotheses and emphasize any identified customer
+                problems.
+                - Highlight key hypotheses related to your business model, particularly focusing on customer pain and
+                your solution.
+            </p>
+            <br />
+            <p><strong>Action Slides:</strong>Describe the specific tests conducted to validate your hypotheses.
+                - Present the discovered facts and insights from the tests, along with any remaining information to be
+                uncovered.
+                - Emphasize the importance of gathering data to demonstrate your understanding of customer pain.
+            </p>
+            <br />
+            <p><strong>Pivot Slides:</strong> Explain how your initial assumptions were either confirmed or refuted.
+                - Outline any significant pivots made based on the test results.
+            </p>
+            <br />
+            <p><strong>Validated Business Model Slides:</strong> Diagram your business model using the Business Model
+                Canvas.
+                - Clearly illustrate how your business delivers value and its overall value proposition.
+
+            </p>
+            <br />
+            <p><strong>Pivot Slides:</strong> Explain how your initial assumptions were either confirmed or refuted.
+                - Outline any significant pivots made based on the test results.
+            </p>
+            <br />
+            <p><strong>Solution Slides:</strong> Detail your current solution to the customer problem and provide
+                evidence of its viability.
+                - Include customer statements, pilot commitments, and purchase orders, if available.
+
+            </p>
+            <br />
+            <p><strong>Go-to-Market Strategy:</strong> Identify the decision-makers and influencers involved in the
+                sales process.
+                - Share facts and customer feedback that demonstrate your ability to connect with and communicate
+                convincingly to customers.
+            </p>
+            <br />
+            <p><strong>Market Size Analysis:</strong> Present the Total Addressable Market (TAM) and Serviceable
+                Addressable Market (SAM) figures.
+                - Clearly define your target market and your plan for entering the market successfully.
+
+            </p>
+            <br />
+            <p><strong>Lessons Learned:</strong> Communicate the valuable lessons you have learned throughout your
+                entrepreneurial journey.
+                - Acknowledge any pivots made and discuss learnings from both successes and failures.
+
+            </p>
+            <br />
+            <p><strong>Appendices:</strong> Include supporting material in the appendices that complements the main body
+                of the model.
+                - Ensure that all critical information is included in the main presentation, as judges may not read all
+                material in the appendices.</p>
+        </div>
+        <!-- FOOTER -->
+        <section class="footer">
+            <img class="logo" src="./ecell_logo_white.png" alt="Entrepreneurship Cell" width="35%">
+
+            <h3> CONTACT </h3>
+            <br>
+            <div class="contact">
+                <div class="child">
+                    <div>
+                        <h3>Devansh Jain</h3>
+                        <p>Senior Manager<br />
+                            <br> Competitions and Associations
+                        </p>
+                    </div>
+                    <br>
+                    <p><a href="mailto:devansh.jain@ecell-iitkgp.org">devansh.jain@ecell-iitkgp.org</a></p>
+                    <p> <a href="tel:+91 9571375240">+91 9571375240</a></p>
+                </div>
+
+                <div class="child">
+                    <div>
+                        <h3>Siddhant Vardhan Mehta</h3>
+                        <p> Senior Manager <br />
+                            <br> Competitions and Associations
+                        </p>
+                    </div>
+                    <br>
+                    <p><a href="mailto:siddhant.vardhan@ecell-iitkgp.org">siddhant.vardhan@ecell-iitkgp.org</a></p>
+                    <p> <a href="tel:+91 8824004041">+91 8824004041</a></p>
+                </div>
+            </div>
+
+            <div><span><br><br>&copy;2021 Entrepreneurship Cell , IIT Kharagpur </span></div>
+
+            <div class="social">
+                <ul>
+                    <a href="https://www.facebook.com/ecell.iitkgp/" style=" background-color:#39539d;"
+                        class="fa fa-facebook "></a>
+                    <a href="https://www.instagram.com/ecellkgp/?hl=en" style=" background-color:#3da9f5;"
+                        class="fa fa-instagram "></a>
+                    <a href="https://twitter.com/ecelliitkgp?lang=en" style=" background-color:#00538c;"
+                        class="fa fa-twitter "></a>
+                    <a href="https://www.linkedin.com/company/entrepreneurship-cell-iit-kharagpur/"
+                        style="background-color:#2778bb;" class="fa fa-linkedin "></a>
+                </ul>
+            </div>
+
+            <footer>
+                <a href="#top" title="Go to top of page">
+                    <svg width="16" height="12" xmlns="https://www.w3.org/2000/svg">
+                        <path stroke="#fff" stroke-width="2" d="M1 7l5.143-5L11 7" fill="none" fill-rule="evenodd" />
+                    </svg>
+                    <span>Back to top</span>
+                </a>
+            </footer>
+        </section>
+    </div>
+
+    <!--=================FAQ's===================-->
+    <div class="mobilehero">
+        <div class="middle">
+            <h1>RESOURCES</h1>
+        </div>
+        <p class="middle">All useful information on integration and for working with</p>
+
+
+        <!--=============== STRUCTURE ===============-->
+        <div class="struct ele">
+
+        </div>
+
+        <div class="struct ele">
+
         </div>
 
         <div class="struct ele">
             <h1>TAB 3</h1>
             <p>
-                The International Business Model Competition is about recognizing that any new venture is just a guess at a problem / solution and the only valid way to test whether those guesses are right is to “get outside the building” and start working with customers. So what exactly is the difference between a business model and a business plan?
+                The International Business Model Competition is about recognizing that any new venture is just a guess
+                at a problem / solution and the only valid way to test whether those guesses are right is to “get
+                outside the building” and start working with customers. So what exactly is the difference between a
+                business model and a business plan?
             </p>
             <br />
-            <p><strong>Outside versus Inside the Building:</strong> Most business plans are written using library research. Successful business models are achieved through talking to customers and making changes based on feedback from those conversations.</p>
+            <p><strong>Outside versus Inside the Building:</strong> Most business plans are written using library
+                research. Successful business models are achieved through talking to customers and making changes based
+                on feedback from those conversations.</p>
             <br />
-            <p><strong>Input versus Output Focus:</strong> The goal is to identify your assumptions and turn them into facts by getting outside the building. And when a startup has done this, the story is compelling and it is an awesome one to tell because it is based on facts. Validated learning about what customers reallywant is the stuff a business model is made of and music to the ears of potential investors.</p>
+            <p><strong>Input versus Output Focus:</strong> The goal is to identify your assumptions and turn them into
+                facts by getting outside the building. And when a startup has done this, the story is compelling and it
+                is an awesome one to tell because it is based on facts. Validated learning about what customers
+                reallywant is the stuff a business model is made of and music to the ears of potential investors.</p>
             <br />
-            <p><strong>Change versus Fortify:</strong>Most business plans attempt to fortify/prove the core idea with evidence. Judges of the Empresario will be looking for instances where teams learned they were wrong and made a pivot in a new and right direction. Your application should focus on the lessons learned and “pivots” made—the more the better.</p>
+            <p><strong>Change versus Fortify:</strong>Most business plans attempt to fortify/prove the core idea with
+                evidence. Judges of the Empresario will be looking for instances where teams learned they were wrong and
+                made a pivot in a new and right direction. Your application should focus on the lessons learned and
+                “pivots” made—the more the better.</p>
             <br />
-            <p><strong>Chasing Customers versus Chasing Funding:</strong> Let’s face it, many business plans are written to raise money. Unfortunately the business plan formula doesn’t capture the answers VCs most want to see: real validation you can make a product customers want. Instead of chasing the money, chase customers. Getting into the field you will validate the model and raising money will be relatively easy.</p>
+            <p><strong>Chasing Customers versus Chasing Funding:</strong> Let’s face it, many business plans are written
+                to raise money. Unfortunately the business plan formula doesn’t capture the answers VCs most want to
+                see: real validation you can make a product customers want. Instead of chasing the money, chase
+                customers. Getting into the field you will validate the model and raising money will be relatively easy.
+            </p>
             <br />
-            <p><strong>Launching versus Talking:</strong> Business plans often talk about what will happen in the future. Empresario is about what you learned by applying a Customer Development / Lean Startup / Nail It then Scale It process.</p>
+            <p><strong>Launching versus Talking:</strong> Business plans often talk about what will happen in the
+                future. Empresario is about what you learned by applying a Customer Development / Lean Startup / Nail It
+                then Scale It process.</p>
         </div>
 
         <div class="struct ele">
             <h1>TAB 4</h1>
             <p>
-                The International Business Model Competition is about recognizing that any new venture is just a guess at a problem / solution and the only valid way to test whether those guesses are right is to “get outside the building” and start working with customers. So what exactly is the difference between a business model and a business plan?
+                The International Business Model Competition is about recognizing that any new venture is just a guess
+                at a problem / solution and the only valid way to test whether those guesses are right is to “get
+                outside the building” and start working with customers. So what exactly is the difference between a
+                business model and a business plan?
             </p>
             <br />
-            <p><strong>Outside versus Inside the Building:</strong> Most business plans are written using library research. Successful business models are achieved through talking to customers and making changes based on feedback from those conversations.</p>
+            <p><strong>Outside versus Inside the Building:</strong> Most business plans are written using library
+                research. Successful business models are achieved through talking to customers and making changes based
+                on feedback from those conversations.</p>
             <br />
-            <p><strong>Input versus Output Focus:</strong> The goal is to identify your assumptions and turn them into facts by getting outside the building. And when a startup has done this, the story is compelling and it is an awesome one to tell because it is based on facts. Validated learning about what customers reallywant is the stuff a business model is made of and music to the ears of potential investors.</p>
+            <p><strong>Input versus Output Focus:</strong> The goal is to identify your assumptions and turn them into
+                facts by getting outside the building. And when a startup has done this, the story is compelling and it
+                is an awesome one to tell because it is based on facts. Validated learning about what customers
+                reallywant is the stuff a business model is made of and music to the ears of potential investors.</p>
             <br />
-            <p><strong>Change versus Fortify:</strong>Most business plans attempt to fortify/prove the core idea with evidence. Judges of the Empresario will be looking for instances where teams learned they were wrong and made a pivot in a new and right direction. Your application should focus on the lessons learned and “pivots” made—the more the better.</p>
+            <p><strong>Change versus Fortify:</strong>Most business plans attempt to fortify/prove the core idea with
+                evidence. Judges of the Empresario will be looking for instances where teams learned they were wrong and
+                made a pivot in a new and right direction. Your application should focus on the lessons learned and
+                “pivots” made—the more the better.</p>
             <br />
-            <p><strong>Chasing Customers versus Chasing Funding:</strong> Let’s face it, many business plans are written to raise money. Unfortunately the business plan formula doesn’t capture the answers VCs most want to see: real validation you can make a product customers want. Instead of chasing the money, chase customers. Getting into the field you will validate the model and raising money will be relatively easy.</p>
+            <p><strong>Chasing Customers versus Chasing Funding:</strong> Let’s face it, many business plans are written
+                to raise money. Unfortunately the business plan formula doesn’t capture the answers VCs most want to
+                see: real validation you can make a product customers want. Instead of chasing the money, chase
+                customers. Getting into the field you will validate the model and raising money will be relatively easy.
+            </p>
             <br />
-            <p><strong>Launching versus Talking:</strong> Business plans often talk about what will happen in the future. Empresario is about what you learned by applying a Customer Development / Lean Startup / Nail It then Scale It process.</p>
+            <p><strong>Launching versus Talking:</strong> Business plans often talk about what will happen in the
+                future. Empresario is about what you learned by applying a Customer Development / Lean Startup / Nail It
+                then Scale It process.</p>
         </div>
 
         <div class="struct ele">
             <h1>TAB 5</h1>
             <p>
-                The International Business Model Competition is about recognizing that any new venture is just a guess at a problem / solution and the only valid way to test whether those guesses are right is to “get outside the building” and start working with customers. So what exactly is the difference between a business model and a business plan?
+                The International Business Model Competition is about recognizing that any new venture is just a guess
+                at a problem / solution and the only valid way to test whether those guesses are right is to “get
+                outside the building” and start working with customers. So what exactly is the difference between a
+                business model and a business plan?
             </p>
             <br />
-            <p><strong>Outside versus Inside the Building:</strong> Most business plans are written using library research. Successful business models are achieved through talking to customers and making changes based on feedback from those conversations.</p>
+            <p><strong>Outside versus Inside the Building:</strong> Most business plans are written using library
+                research. Successful business models are achieved through talking to customers and making changes based
+                on feedback from those conversations.</p>
             <br />
-            <p><strong>Input versus Output Focus:</strong> The goal is to identify your assumptions and turn them into facts by getting outside the building. And when a startup has done this, the story is compelling and it is an awesome one to tell because it is based on facts. Validated learning about what customers reallywant is the stuff a business model is made of and music to the ears of potential investors.</p>
+            <p><strong>Input versus Output Focus:</strong> The goal is to identify your assumptions and turn them into
+                facts by getting outside the building. And when a startup has done this, the story is compelling and it
+                is an awesome one to tell because it is based on facts. Validated learning about what customers
+                reallywant is the stuff a business model is made of and music to the ears of potential investors.</p>
             <br />
-            <p><strong>Change versus Fortify:</strong>Most business plans attempt to fortify/prove the core idea with evidence. Judges of the Empresario will be looking for instances where teams learned they were wrong and made a pivot in a new and right direction. Your application should focus on the lessons learned and “pivots” made—the more the better.</p>
+            <p><strong>Change versus Fortify:</strong>Most business plans attempt to fortify/prove the core idea with
+                evidence. Judges of the Empresario will be looking for instances where teams learned they were wrong and
+                made a pivot in a new and right direction. Your application should focus on the lessons learned and
+                “pivots” made—the more the better.</p>
             <br />
-            <p><strong>Chasing Customers versus Chasing Funding:</strong> Let’s face it, many business plans are written to raise money. Unfortunately the business plan formula doesn’t capture the answers VCs most want to see: real validation you can make a product customers want. Instead of chasing the money, chase customers. Getting into the field you will validate the model and raising money will be relatively easy.</p>
+            <p><strong>Chasing Customers versus Chasing Funding:</strong> Let’s face it, many business plans are written
+                to raise money. Unfortunately the business plan formula doesn’t capture the answers VCs most want to
+                see: real validation you can make a product customers want. Instead of chasing the money, chase
+                customers. Getting into the field you will validate the model and raising money will be relatively easy.
+            </p>
             <br />
-            <p><strong>Launching versus Talking:</strong> Business plans often talk about what will happen in the future. Empresario is about what you learned by applying a Customer Development / Lean Startup / Nail It then Scale It process.</p>
+            <p><strong>Launching versus Talking:</strong> Business plans often talk about what will happen in the
+                future. Empresario is about what you learned by applying a Customer Development / Lean Startup / Nail It
+                then Scale It process.</p>
         </div>
 
         <div class="struct ele">
             <h1>TAB 6</h1>
             <p>
-                The International Business Model Competition is about recognizing that any new venture is just a guess at a problem / solution and the only valid way to test whether those guesses are right is to “get outside the building” and start working with customers. So what exactly is the difference between a business model and a business plan?
+                The International Business Model Competition is about recognizing that any new venture is just a guess
+                at a problem / solution and the only valid way to test whether those guesses are right is to “get
+                outside the building” and start working with customers. So what exactly is the difference between a
+                business model and a business plan?
             </p>
             <br />
-            <p><strong>Outside versus Inside the Building:</strong> Most business plans are written using library research. Successful business models are achieved through talking to customers and making changes based on feedback from those conversations.</p>
+            <p><strong>Outside versus Inside the Building:</strong> Most business plans are written using library
+                research. Successful business models are achieved through talking to customers and making changes based
+                on feedback from those conversations.</p>
             <br />
-            <p><strong>Input versus Output Focus:</strong> The goal is to identify your assumptions and turn them into facts by getting outside the building. And when a startup has done this, the story is compelling and it is an awesome one to tell because it is based on facts. Validated learning about what customers reallywant is the stuff a business model is made of and music to the ears of potential investors.</p>
+            <p><strong>Input versus Output Focus:</strong> The goal is to identify your assumptions and turn them into
+                facts by getting outside the building. And when a startup has done this, the story is compelling and it
+                is an awesome one to tell because it is based on facts. Validated learning about what customers
+                reallywant is the stuff a business model is made of and music to the ears of potential investors.</p>
             <br />
-            <p><strong>Change versus Fortify:</strong>Most business plans attempt to fortify/prove the core idea with evidence. Judges of the Empresario will be looking for instances where teams learned they were wrong and made a pivot in a new and right direction. Your application should focus on the lessons learned and “pivots” made—the more the better.</p>
+            <p><strong>Change versus Fortify:</strong>Most business plans attempt to fortify/prove the core idea with
+                evidence. Judges of the Empresario will be looking for instances where teams learned they were wrong and
+                made a pivot in a new and right direction. Your application should focus on the lessons learned and
+                “pivots” made—the more the better.</p>
             <br />
-            <p><strong>Chasing Customers versus Chasing Funding:</strong> Let’s face it, many business plans are written to raise money. Unfortunately the business plan formula doesn’t capture the answers VCs most want to see: real validation you can make a product customers want. Instead of chasing the money, chase customers. Getting into the field you will validate the model and raising money will be relatively easy.</p>
-            <br />
-            <p><strong>Launching versus Talking:</strong> Business plans often talk about what will happen in the future. Empresario is about what you learned by applying a Customer Development / Lean Startup / Nail It then Scale It process.</p>
-        </div>
-
-      <div class="mobilehero faq">
-        <div class="faq-container">
-          <details class="faq-box" >
-            <summary class="faq-header">
-                Business Model Competition
-            </summary>
-            <div class="faq-content">
-                <h2>What is Business Model Competition?</h2>
-                <p>
-                Empresario represents a radical departure from the past and the crest of a new paradigm in entrepreneurship. Empresario is not a business plan competition. Rather than focusing on developing a robust business plan, complete with financials and slick presentations, business model competition focuses on identifying and precisely defining the assumptions of the new venture, testing those assumptions in the field, and then pivoting (changing) based on the lessons learned. It rewards entrepreneurs fo
-                </p>
-                <br />
-                <p>Breaking down ideas into key business model assumptions.
-                Getting outside the building and testing their assumptions with customers.
-                Applying customer development and lean startup principles to nail the solution.
-                Learning to pivot (change) until arrival at a customer-validated business model.</p>
-            </div>
-          </details>
-
-          <details class="faq-box" >
-            <summary class="faq-header">
-                B Model v/s B Plan
-            </summary>
-            <div class="faq-content">
-                <h2>How does a Business Model differ from a traditional Business Plan?</h2>
-            <p>
-                The International Business Model Competition is about recognizing that any new venture is just a guess at a problem / solution and the only valid way to test whether those guesses are right is to “get outside the building” and start working with customers. So what exactly is the difference between a business model and a business plan?
+            <p><strong>Chasing Customers versus Chasing Funding:</strong> Let’s face it, many business plans are written
+                to raise money. Unfortunately the business plan formula doesn’t capture the answers VCs most want to
+                see: real validation you can make a product customers want. Instead of chasing the money, chase
+                customers. Getting into the field you will validate the model and raising money will be relatively easy.
             </p>
             <br />
-            <p><strong>Outside versus Inside the Building:</strong> Most business plans are written using library research. Successful business models are achieved through talking to customers and making changes based on feedback from those conversations.</p>
-            <br />
-            <p><strong>Input versus Output Focus:</strong> The goal is to identify your assumptions and turn them into facts by getting outside the building. And when a startup has done this, the story is compelling and it is an awesome one to tell because it is based on facts. Validated learning about what customers reallywant is the stuff a business model is made of and music to the ears of potential investors.</p>
-            <br />
-            <p><strong>Change versus Fortify:</strong>Most business plans attempt to fortify/prove the core idea with evidence. Judges of the Empresario will be looking for instances where teams learned they were wrong and made a pivot in a new and right direction. Your application should focus on the lessons learned and “pivots” made—the more the better.</p>
-            <br />
-            <p><strong>Chasing Customers versus Chasing Funding:</strong> Let’s face it, many business plans are written to raise money. Unfortunately the business plan formula doesn’t capture the answers VCs most want to see: real validation you can make a product customers want. Instead of chasing the money, chase customers. Getting into the field you will validate the model and raising money will be relatively easy.</p>
-            <br />
-            <p><strong>Launching versus Talking:</strong> Business plans often talk about what will happen in the future. Empresario is about what you learned by applying a Customer Development / Lean Startup / Nail It then Scale It process.</p>
-            </div>
-          </details>
-    
-          <details class="faq-box" >
-            <summary class="faq-header">
-                Development
-            </summary>
-            <div class="faq-content">
-                <h2>What is Business Model Competition?</h2>
-                <p>
-                Empresario represents a radical departure from the past and the crest of a new paradigm in entrepreneurship. Empresario is not a business plan competition. Rather than focusing on developing a robust business plan, complete with financials and slick presentations, business model competition focuses on identifying and precisely defining the assumptions of the new venture, testing those assumptions in the field, and then pivoting (changing) based on the lessons learned. It rewards entrepreneurs fo
-                </p>
-                <br />
-                <p>Breaking down ideas into key business model assumptions.
-                Getting outside the building and testing their assumptions with customers.
-                Applying customer development and lean startup principles to nail the solution.
-                Learning to pivot (change) until arrival at a customer-validated business model.</p>
-            </div>
-          </details>
-
-          <details class="faq-box" >
-            <summary class="faq-header">
-                Business Model Canvas
-            </summary>
-            <div class="faq-content">
-                <h2>What is Business Model Competition?</h2>
-                <p>
-                Empresario represents a radical departure from the past and the crest of a new paradigm in entrepreneurship. Empresario is not a business plan competition. Rather than focusing on developing a robust business plan, complete with financials and slick presentations, business model competition focuses on identifying and precisely defining the assumptions of the new venture, testing those assumptions in the field, and then pivoting (changing) based on the lessons learned. It rewards entrepreneurs fo
-                </p>
-                <br />
-                <p>Breaking down ideas into key business model assumptions.
-                Getting outside the building and testing their assumptions with customers.
-                Applying customer development and lean startup principles to nail the solution.
-                Learning to pivot (change) until arrival at a customer-validated business model.</p>
-            </div>
-          </details>
+            <p><strong>Launching versus Talking:</strong> Business plans often talk about what will happen in the
+                future. Empresario is about what you learned by applying a Customer Development / Lean Startup / Nail It
+                then Scale It process.</p>
         </div>
-    </div>
 
-    
-    <!-- FOOTER -->
-    <section class="footer">
-        <img class="logo" src="./ecell_logo_white.png" alt="Entrepreneurship Cell" width="35%">
-        
-        <h3> CONTACT </h3>
-        <br>
-        <div class="contact">
-            <div class="child">
-                <div>
-                    <h3>Devansh Jain</h3>
-                    <p>Senior Manager<br />
-                        <br> Competitions and Associations
-                    </p>
-                </div>
+        <div class="mobilehero faq">
+            <div class="faq-container">
+                <details class="faq-box">
+                    <summary class="faq-header">
+                        Business Model Competition
+                    </summary>
+                    <div class="faq-content">
+                        <h2>What is Business Model Competition?</h2>
+                        <p>
+                            Empresario represents a radical departure from the past and the crest of a new paradigm in
+                            entrepreneurship. Empresario is not a business plan competition. Rather than focusing on
+                            developing a robust business plan, complete with financials and slick presentations,
+                            business model competition focuses on identifying and precisely defining the assumptions of
+                            the new venture, testing those assumptions in the field, and then pivoting (changing) based
+                            on the lessons learned. It rewards entrepreneurs fo
+                        </p>
+                        <br />
+                        <p>Breaking down ideas into key business model assumptions.
+                            Getting outside the building and testing their assumptions with customers.
+                            Applying customer development and lean startup principles to nail the solution.
+                            Learning to pivot (change) until arrival at a customer-validated business model.</p>
+                    </div>
+                </details>
+
+                <details class="faq-box">
+                    <summary class="faq-header">
+                        B Model v/s B Plan
+                    </summary>
+                    <div class="faq-content">
+                        <h2>How does a Business Model differ from a traditional Business Plan?</h2>
+                        <p>
+                            The International Business Model Competition is about recognizing that any new venture is
+                            just a guess at a problem / solution and the only valid way to test whether those guesses
+                            are right is to “get outside the building” and start working with customers. So what exactly
+                            is the difference between a business model and a business plan?
+                        </p>
+                        <br />
+                        <p><strong>Outside versus Inside the Building:</strong> Most business plans are written using
+                            library research. Successful business models are achieved through talking to customers and
+                            making changes based on feedback from those conversations.</p>
+                        <br />
+                        <p><strong>Input versus Output Focus:</strong> The goal is to identify your assumptions and turn
+                            them into facts by getting outside the building. And when a startup has done this, the story
+                            is compelling and it is an awesome one to tell because it is based on facts. Validated
+                            learning about what customers reallywant is the stuff a business model is made of and music
+                            to the ears of potential investors.</p>
+                        <br />
+                        <p><strong>Change versus Fortify:</strong>Most business plans attempt to fortify/prove the core
+                            idea with evidence. Judges of the Empresario will be looking for instances where teams
+                            learned they were wrong and made a pivot in a new and right direction. Your application
+                            should focus on the lessons learned and “pivots” made—the more the better.</p>
+                        <br />
+                        <p><strong>Chasing Customers versus Chasing Funding:</strong> Let’s face it, many business plans
+                            are written to raise money. Unfortunately the business plan formula doesn’t capture the
+                            answers VCs most want to see: real validation you can make a product customers want. Instead
+                            of chasing the money, chase customers. Getting into the field you will validate the model
+                            and raising money will be relatively easy.</p>
+                        <br />
+                        <p><strong>Launching versus Talking:</strong> Business plans often talk about what will happen
+                            in the future. Empresario is about what you learned by applying a Customer Development /
+                            Lean Startup / Nail It then Scale It process.</p>
+                    </div>
+                </details>
+
+                <details class="faq-box">
+                    <summary class="faq-header">
+                        Development
+                    </summary>
+                    <div class="faq-content">
+                        <h2>What is Business Model Competition?</h2>
+                        <p>
+                            Empresario represents a radical departure from the past and the crest of a new paradigm in
+                            entrepreneurship. Empresario is not a business plan competition. Rather than focusing on
+                            developing a robust business plan, complete with financials and slick presentations,
+                            business model competition focuses on identifying and precisely defining the assumptions of
+                            the new venture, testing those assumptions in the field, and then pivoting (changing) based
+                            on the lessons learned. It rewards entrepreneurs fo
+                        </p>
+                        <br />
+                        <p>Breaking down ideas into key business model assumptions.
+                            Getting outside the building and testing their assumptions with customers.
+                            Applying customer development and lean startup principles to nail the solution.
+                            Learning to pivot (change) until arrival at a customer-validated business model.</p>
+                    </div>
+                </details>
+
+                <details class="faq-box">
+                    <summary class="faq-header">
+                        Business Model Canvas
+                    </summary>
+                    <div class="faq-content">
+                        <h2>What is Business Model Competition?</h2>
+                        <p>
+                            Empresario represents a radical departure from the past and the crest of a new paradigm in
+                            entrepreneurship. Empresario is not a business plan competition. Rather than focusing on
+                            developing a robust business plan, complete with financials and slick presentations,
+                            business model competition focuses on identifying and precisely defining the assumptions of
+                            the new venture, testing those assumptions in the field, and then pivoting (changing) based
+                            on the lessons learned. It rewards entrepreneurs fo
+                        </p>
+                        <br />
+                        <p>Breaking down ideas into key business model assumptions.
+                            Getting outside the building and testing their assumptions with customers.
+                            Applying customer development and lean startup principles to nail the solution.
+                            Learning to pivot (change) until arrival at a customer-validated business model.</p>
+                    </div>
+                </details>
+            </div>
+        </div>
+
+
+        <!-- FOOTER -->
+        <section class="footer">
+            <img class="logo" src="./ecell_logo_white.png" alt="Entrepreneurship Cell" width="35%">
+
+            <h3> CONTACT </h3>
+            <br>
+            <div class="contact">
+                <div class="child">
+                    <div>
+                        <h3>Devansh Jain</h3>
+                        <p>Senior Manager<br />
+                            <br> Competitions and Associations
+                        </p>
+                    </div>
                     <br>
-                    <p ><a href="mailto:devansh.jain@ecell-iitkgp.org">devansh.jain@ecell-iitkgp.org</a></p>
-                    <p> <a  href="tel:+91 9571375240" >+91 9571375240</a></p>
-            </div>
-            
-            <div class="child">
-                <div>
-                    <h3>Siddhant Vardhan Mehta</h3>
-                    <p> Senior Manager <br />
-                        <br> Competitions and Associations                                  
-                    </p>
+                    <p><a href="mailto:devansh.jain@ecell-iitkgp.org">devansh.jain@ecell-iitkgp.org</a></p>
+                    <p> <a href="tel:+91 9571375240">+91 9571375240</a></p>
                 </div>
+
+                <div class="child">
+                    <div>
+                        <h3>Siddhant Vardhan Mehta</h3>
+                        <p> Senior Manager <br />
+                            <br> Competitions and Associations
+                        </p>
+                    </div>
                     <br>
-                    <p ><a href="mailto:siddhant.vardhan@ecell-iitkgp.org">siddhant.vardhan@ecell-iitkgp.org</a></p>
-                    <p > <a href="tel:+91 8824004041">+91 8824004041</a></p>
+                    <p><a href="mailto:siddhant.vardhan@ecell-iitkgp.org">siddhant.vardhan@ecell-iitkgp.org</a></p>
+                    <p> <a href="tel:+91 8824004041">+91 8824004041</a></p>
+                </div>
             </div>
-        </div>
-      
-        <div><span><br><br>&copy;2021 Entrepreneurship Cell , IIT Kharagpur </span></div>
 
-        <div class="social">
-            <ul >
-                <a href="https://www.facebook.com/ecell.iitkgp/" style=" background-color:#39539d;" class="fa fa-facebook "></a>
-                <a href="https://www.instagram.com/ecellkgp/?hl=en" style=" background-color:#3da9f5;"class="fa fa-instagram "></a>
-                <a href="https://twitter.com/ecelliitkgp?lang=en" style=" background-color:#00538c;"class="fa fa-twitter "></a>
-                <a href="https://www.linkedin.com/company/entrepreneurship-cell-iit-kharagpur/" style="background-color:#2778bb;" class="fa fa-linkedin "></a>
-            </ul>
-        </div>
+            <div><span><br><br>&copy;2021 Entrepreneurship Cell , IIT Kharagpur </span></div>
 
-    <footer>
-        <a href="#top" title="Go to top of page">
-            <svg width="16" height="12" xmlns="https://www.w3.org/2000/svg">
-                <path stroke="#fff" stroke-width="2" d="M1 7l5.143-5L11 7" fill="none" fill-rule="evenodd" />
-            </svg>
-            <span>Back to top</span>
-        </a>
-    </footer>
-</section>
+            <div class="social">
+                <ul>
+                    <a href="https://www.facebook.com/ecell.iitkgp/" style=" background-color:#39539d;"
+                        class="fa fa-facebook "></a>
+                    <a href="https://www.instagram.com/ecellkgp/?hl=en" style=" background-color:#3da9f5;"
+                        class="fa fa-instagram "></a>
+                    <a href="https://twitter.com/ecelliitkgp?lang=en" style=" background-color:#00538c;"
+                        class="fa fa-twitter "></a>
+                    <a href="https://www.linkedin.com/company/entrepreneurship-cell-iit-kharagpur/"
+                        style="background-color:#2778bb;" class="fa fa-linkedin "></a>
+                </ul>
+            </div>
 
-<!--=============== JS ===============-->
-<script src="./tab.js"></script>
-<script type="text/javascript" src="./vanilla-tilt.js"></script>
-<script src="./nav.js"></script>
-<script src="./slideshow.js"></script>
-<script src="./testmonials.js"></script>
-<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.waves.min.js"></script>
+            <footer>
+                <a href="#top" title="Go to top of page">
+                    <svg width="16" height="12" xmlns="https://www.w3.org/2000/svg">
+                        <path stroke="#fff" stroke-width="2" d="M1 7l5.143-5L11 7" fill="none" fill-rule="evenodd" />
+                    </svg>
+                    <span>Back to top</span>
+                </a>
+            </footer>
+        </section>
 
-<script>
-    VANTA.WAVES({
-        el: "#background",
-        mouseControls: true,
-        touchControls: true,
-        gyroControls: false,
-        minHeight: 200.00,
-        minWidth: 200.00,
-        scale: 1.00,
-        scaleMobile: 1.00,
-        color: 0x9d9d9d,
+        <!--=============== JS ===============-->
+        <script src="./tab.js"></script>
+        <script type="text/javascript" src="./vanilla-tilt.js"></script>
+        <script src="./nav.js"></script>
+        <script src="./slideshow.js"></script>
+        <script src="./testmonials.js"></script>
+        <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.waves.min.js"></script>
 
-    })
-</script>
+        <script>
+            VANTA.WAVES({
+                el: "#background",
+                mouseControls: true,
+                touchControls: true,
+                gyroControls: false,
+                minHeight: 200.00,
+                minWidth: 200.00,
+                scale: 1.00,
+                scaleMobile: 1.00,
+                color: 0x9d9d9d,
+
+            })
+        </script>
 
 </body>
+
 </html>
