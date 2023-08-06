@@ -56,11 +56,11 @@ body .hero .tab {
   transition: color 0.15s ease-in;
 }
 
-body .hero input[type="radio"]:checked + label {
+body .hero input[type="radio"]:checked+label {
   color: var(--primary-color);
 }
 
-body .hero input[type="radio"]:checked + label > .notification {
+body .hero input[type="radio"]:checked+label>.notification {
   background-color: var(--primary-color);
   color: #fff;
 }
@@ -76,23 +76,23 @@ body .hero .glider {
   transition: 0.25s ease-out;
 }
 
-body .hero input[id="radio-1"]:checked ~ .glider {
+body .hero input[id="radio-1"]:checked~.glider {
   transform: translateX(0);
 }
 
-body .hero input[id="radio-2"]:checked ~ .glider {
+body .hero input[id="radio-2"]:checked~.glider {
   transform: translateX(100%);
 }
 
-body .hero input[id="radio-3"]:checked ~ .glider {
+body .hero input[id="radio-3"]:checked~.glider {
   transform: translateX(200%);
 }
 
-body .hero input[id="radio-4"]:checked ~ .glider {
+body .hero input[id="radio-4"]:checked~.glider {
   transform: translateX(300%);
 }
 
-body .hero input[id="radio-5"]:checked ~ .glider {
+body .hero input[id="radio-5"]:checked~.glider {
   transform: translateX(400%);
 }
 
@@ -170,7 +170,7 @@ body .media .section .cards .card {
   cursor: pointer;
 }
 
-body .media .section .cards .card:hover{
+body .media .section .cards .card:hover {
   border-width: 5px;
 }
 
@@ -184,6 +184,7 @@ body .media .section .cards .card img {
   body .hero {
     height: 30vh;
   }
+
   body .media {
     margin: 10vh 0;
   }
