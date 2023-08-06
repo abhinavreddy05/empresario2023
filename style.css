@@ -189,65 +189,46 @@ a {
 }
 
 nav ul li button {
-  --primary-color: #000;
-  --secondary-color: #fff;
-  --hover-color: #111;
-  --arrow-width: 10px;
-  --arrow-stroke: 2px;
+  appearance: none;
+  background-color: transparent;
+  border: 0.125em solid #1A1A1A;
+  border-radius: 0.9375em;
   box-sizing: border-box;
-  border: 0;
-  margin: 0.1rem;
-  border-radius: 0.6rem;
-  color: var(--secondary-color);
-  height: 2.8rem;
-  padding: 0rem 1rem;
-  background: var(--primary-color);
-  display: flex;
-  transition: 0.2s background;
-  align-items: center;
-  gap: 0.6em;
-}
-
-nav ul li button .arrow-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-nav ul li button .arrow {
-  margin-top: 1px;
-  width: var(--arrow-width);
-  background: var(--primary-color);
-  height: var(--arrow-stroke);
-  position: relative;
-  transition: 0.2s;
-}
-
-nav ul li button .arrow::before {
-  content: "";
-  box-sizing: border-box;
-  position: absolute;
-  border: solid var(--secondary-color);
-  border-width: 0 var(--arrow-stroke) var(--arrow-stroke) 0;
+  color: #000;
+  cursor: pointer;
   display: inline-block;
-  top: -3px;
-  right: 3px;
-  transition: 0.2s;
-  padding: 3px;
-  transform: rotate(-45deg);
-}
-
-nav ul li button:hover {
-  background-color: var(--hover-color);
-}
-
-nav ul li button:hover .arrow {
-  background: var(--secondary-color);
-}
-
-nav ul li button:hover .arrow:before {
-  right: 0;
-}
+  font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  width: fit-content;
+  outline: none;
+  padding: 0.6em 1.5em;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  will-change: transform;
+ }
+ 
+ nav ul li button:disabled {
+  pointer-events: none;
+ }
+ 
+ nav ul li button:hover {
+  color: #fff;
+  background-color: #1A1A1A;
+  box-shadow: rgba(0, 0, 0, 0.15) 0 8px 15px;
+  transform: translateY(-2px);
+ }
+ 
+ nav ul li button:active {
+  box-shadow: none;
+  transform: translateY(0);
+ }
 
 /*=============== DROPDOWN ===============*/
 .dropdown__button {
@@ -404,7 +385,7 @@ body .hero .left button {
   margin-top: 1rem;
   width: fit-content;
   outline: none;
-  padding: 1em 2.1em;
+  padding: 1em 1.6em;
   text-align: center;
   text-decoration: none;
   transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
@@ -540,7 +521,7 @@ body .about .section .right p{
 
 @media (max-width: 800px){
   body .about{
-    margin-bottom: 20rem;
+    margin-bottom: max(calc(15vw + 10vh), 8rem);
   }
 
   body .about .section {
@@ -595,7 +576,7 @@ body .incentives .back {
   height: 100%;
   width: 100%;
   transform-style: preserve-3d;
-  color: #ebebeb;
+  color: #000;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -607,8 +588,9 @@ body .incentives .back {
   backface-visibility: hidden;
 }
 body .incentives .front {
-  background: rgb(17,17,16);
-  background: linear-gradient(119deg, rgba(17,17,16,1) 0%, rgba(25,25,25,1) 100%);
+  background-color: #ffdb0e;
+  background-image: linear-gradient(225deg, #ffdb0e 0%, #fd6a0d 100%);
+
 }
 body .incentives .front .content span {
   font-size: 3rem;
@@ -629,8 +611,8 @@ body .incentives .content p {
   padding: 0 3em;
 }
 body .incentives .back {
-  background: rgb(17,17,16);
-  background: linear-gradient(119deg, rgba(17,17,16,1) 0%, rgba(25,25,25,1) 100%);
+  background-color: #ffdb0e;
+  background-image: linear-gradient(225deg, #ffdb0e 0%, #fd6a0d 100%);
   transform: rotateX(180deg);
 }
 body .incentives .container:hover .card {
@@ -686,14 +668,14 @@ body .tracks .cards{
 }
 
 body .tracks .card{
-  color: #ffffff;
+  color: #fff;
   display: flex;
   flex-direction: column;
   gap: 0.6rem;
   padding: 3rem 2rem;
   border-radius: 0.4em;
-  background: rgb(17,17,16);
-  background: linear-gradient(119deg, rgba(17,17,16,1) 0%, rgba(25,25,25,1) 100%);
+  background-color: #232932;
+  background-image: linear-gradient(225deg, #5B626F -100%, #232932 100%);
   transform-style: preserve-3d;
   transform: perspective(1000px);
 }
@@ -986,7 +968,7 @@ body .tracks .card .bottom p{
 @media (max-width: 1100px) {
   body .hero{
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     margin-top: 5vw;
     align-items: center;
     justify-content: center;

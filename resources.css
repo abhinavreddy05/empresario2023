@@ -216,5 +216,6 @@ body .hero {
     }
     body .mobilehero{
         display: block;
+        height: fit-content;
     }
 }

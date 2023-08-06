@@ -189,66 +189,46 @@ a {
 }
 
 nav ul li button {
-  --primary-color: #000;
-  --secondary-color: #fff;
-  --hover-color: #111;
-  --arrow-width: 10px;
-  --arrow-stroke: 2px;
+  appearance: none;
+  background-color: transparent;
+  border: 0.125em solid #1A1A1A;
+  border-radius: 0.9375em;
   box-sizing: border-box;
-  border: 0;
-  margin: 0.1rem;
-  border-radius: 0.6rem;
-  color: var(--secondary-color);
-  height: 2.8rem;
-  padding: 0rem 1rem;
-  background: var(--primary-color);
-  display: flex;
-  transition: 0.2s background;
-  align-items: center;
-  gap: 0.6em;
-}
-
-nav ul li button .arrow-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-nav ul li button .arrow {
-  margin-top: 1px;
-  width: var(--arrow-width);
-  background: var(--primary-color);
-  height: var(--arrow-stroke);
-  position: relative;
-  transition: 0.2s;
-}
-
-nav ul li button .arrow::before {
-  content: "";
-  box-sizing: border-box;
-  position: absolute;
-  border: solid var(--secondary-color);
-  border-width: 0 var(--arrow-stroke) var(--arrow-stroke) 0;
+  color: #000;
+  cursor: pointer;
   display: inline-block;
-  top: -3px;
-  right: 3px;
-  transition: 0.2s;
-  padding: 3px;
-  transform: rotate(-45deg);
-}
-
-nav ul li button:hover {
-  background-color: var(--hover-color);
-}
-
-nav ul li button:hover .arrow {
-  background: var(--secondary-color);
-}
-
-nav ul li button:hover .arrow:before {
-  right: 0;
-}
-
+  font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  width: fit-content;
+  outline: none;
+  padding: 0.6em 1.5em;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  will-change: transform;
+ }
+ 
+ nav ul li button:disabled {
+  pointer-events: none;
+ }
+ 
+ nav ul li button:hover {
+  color: #fff;
+  background-color: #1A1A1A;
+  box-shadow: rgba(0, 0, 0, 0.15) 0 8px 15px;
+  transform: translateY(-2px);
+ }
+ 
+ nav ul li button:active {
+  box-shadow: none;
+  transform: translateY(0);
+ }
 /*=============== DROPDOWN ===============*/
 .dropdown__button {
   cursor: pointer;
